@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Radosnica „Moj početak“ sa imenom · Moj početak</title>
+<meta name="description" content="Plišana radosnica sa imenom vaše bebe u zlatu. Izaberite izdanje (samo radosnica, Baby Born, Baby World, Baby Lux), boju korica i ime.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Mulish:wght@400;600;700;800&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+:root{
+  --gold:#937b4d; --gold-deep:#6f5a33; --gold-soft:#efe7d8;
+  --rose:#e0c4d4; --blush:#f8e7e1; --sky:#d4dce8; --sky-soft:#eaeff5;
+  --paper:#fcfbf7; --ink:#3b3226; --muted:#7c7163; --line:#ebe3d6;
+  --shadow:0 18px 40px -22px rgba(59,50,38,.35);
+  --cover:#efc3cc;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Mulish",system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input,textarea{font:inherit;color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;line-height:1.05}
+.script{font-family:"Great Vibes",cursive;font-weight:400;color:var(--gold)}
+.eyebrow{font-size:11.5px;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;padding:16px 28px;border-radius:2px;font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;border:1.5px solid var(--ink);transition:background .15s,color .15s,border-color .15s;cursor:pointer}
+.btn-dark{background:var(--ink);color:var(--paper)}
+.btn-dark:hover{background:var(--gold-deep);border-color:var(--gold-deep)}
+.btn-ghost{background:transparent}
+.btn-ghost:hover{background:var(--ink);color:var(--paper)}
+
+header.site{position:sticky;top:0;z-index:50;background:rgba(252,251,247,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:24px}
+.logo{display:flex;align-items:center;gap:10px;font-family:"Cormorant Garamond",serif;font-size:26px;font-weight:600;color:var(--gold-deep);letter-spacing:.04em}
+.logo img{width:52px;height:52px;mix-blend-mode:multiply}
+nav.main{display:flex;gap:30px;font-weight:700;font-size:14px}
+nav.main a{padding:4px 0;border-bottom:1px solid transparent}
+nav.main a:hover,nav.main a.on{border-color:var(--gold)}
+.icons{display:flex;gap:10px;align-items:center}
+.icon-btn{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);background:#fff;position:relative;cursor:pointer}
+.icon-btn svg{width:18px;height:18px;stroke:var(--ink);fill:none;stroke-width:1.8}
+.badge{position:absolute;top:-4px;right:-4px;background:var(--gold);color:#fff;font-size:11px;font-weight:800;min-width:19px;height:19px;border-radius:10px;display:grid;place-items:center;transition:transform .2s}
+.badge.bump{transform:scale(1.35)}
+.menu-btn{display:none}
+
+.crumbs{display:flex;gap:10px;font-size:13px;color:var(--muted);font-weight:700;padding:22px 0}
+.crumbs a:hover{color:var(--gold-deep)}
+
+.product{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:start;padding-bottom:90px}
+.gallery{position:sticky;top:96px;display:grid;grid-template-columns:76px 1fr;gap:14px}
+.thumbs{display:flex;flex-direction:column;gap:10px}
+.thumbs button{border:1.5px solid transparent;overflow:hidden;padding:0;cursor:pointer;aspect-ratio:1;background:#fff}
+.thumbs button.on{border-color:var(--gold)}
+.thumbs img{width:100%;height:100%;object-fit:cover}
+.stage{position:relative;overflow:hidden;aspect-ratio:4/5;background:#fff;box-shadow:var(--shadow)}
+.stage img{width:100%;height:100%;object-fit:cover;transition:opacity .16s}
+.tag{position:absolute;top:16px;left:16px;background:var(--paper);color:var(--gold-deep);font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:7px 12px;z-index:2}
+
+.info h1{font-size:clamp(42px,4.8vw,64px);margin:10px 0 10px}
+.rating{font-size:14px;color:var(--muted);font-weight:700}
+.rating a{text-decoration:underline;text-underline-offset:3px}
+.pricebox{display:flex;align-items:baseline;gap:12px;margin:20px 0 4px;flex-wrap:wrap}
+.pricebox .now{font-family:"Cormorant Garamond",serif;font-size:42px;font-weight:600;line-height:1}
+.pricebox .note{font-size:12px;color:var(--muted);font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.intro{color:var(--muted);font-size:16.5px;margin:14px 0 0;max-width:52ch}
+
+.opt{margin-top:32px}
+.opt-head{display:flex;justify-content:space-between;align-items:baseline;font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px;gap:12px}
+.opt-head .sel{font-size:14px;letter-spacing:0;text-transform:none;color:var(--gold-deep);font-weight:700}
+
+.eds{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.edb{display:flex;gap:12px;align-items:center;text-align:left;border:1px solid var(--line);background:#fff;padding:10px;cursor:pointer;transition:border-color .15s,box-shadow .15s}
+.edb img{width:58px;height:58px;object-fit:cover;flex:0 0 58px}
+.edb b{display:block;font-family:"Cormorant Garamond",serif;font-size:21px;font-weight:600;line-height:1.1}
+.edb small{display:block;font-size:12.5px;color:var(--muted);line-height:1.35}
+.edb .p{display:block;font-size:13px;font-weight:800;margin-top:3px}
+.edb.on{border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+.contains{margin-top:12px;background:var(--sky-soft);padding:12px 16px;font-size:14px}
+.contains b{color:var(--gold-deep)}
+
+.swatches{display:flex;flex-wrap:wrap;gap:12px}
+.sw{width:44px;height:44px;border-radius:50%;border:0;cursor:pointer;box-shadow:inset 0 0 0 1px rgba(0,0,0,.08),0 0 0 3px var(--paper),0 0 0 4px transparent;transition:box-shadow .15s,transform .15s}
+.sw:hover{transform:scale(1.06)}
+.sw.on{box-shadow:inset 0 0 0 1px rgba(0,0,0,.08),0 0 0 3px var(--paper),0 0 0 4.5px var(--ink)}
+.hint{font-size:13px;color:var(--muted);margin-top:10px}
+
+.field{display:block;margin-top:12px}
+.field span{display:block;font-size:13px;font-weight:700;color:var(--muted);margin-bottom:6px}
+input[type=text],textarea{width:100%;border:1px solid var(--line);background:#fff;padding:14px 16px;outline:0;font-size:16px;border-radius:0}
+input[type=text]:focus,textarea:focus{border-color:var(--gold)}
+textarea{min-height:84px;resize:vertical;font-size:15px}
+.radios{display:flex;gap:18px;flex-wrap:wrap;font-size:14.5px;margin-top:6px}
+.radios label{display:flex;gap:8px;align-items:center;cursor:pointer}
+.radios input{accent-color:var(--gold-deep);width:17px;height:17px}
+.hidden{display:none!important}
+
+/* live cover preview */
+.preview{display:flex;gap:22px;align-items:center;background:var(--blush);padding:20px;margin-top:18px}
+.cover{position:relative;flex:0 0 170px;width:170px;aspect-ratio:1/1.04;background:var(--cover);box-shadow:6px 8px 18px -8px rgba(59,50,38,.5),inset -6px 0 0 rgba(255,255,255,.18),inset 0 0 40px rgba(0,0,0,.08);overflow:hidden;transition:background .25s}
+.cover::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 30% 25%,rgba(255,255,255,.28),transparent 45%),radial-gradient(ellipse at 75% 80%,rgba(0,0,0,.08),transparent 50%)}
+.cover svg{position:absolute;left:50%;top:44%;width:66%;transform:translate(-50%,-50%)}
+.cover .nm{position:absolute;right:10px;bottom:8px;font-family:"Great Vibes",cursive;font-size:25px;line-height:1;max-width:88%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background:linear-gradient(180deg,#e6d29e,#a7874a 55%,#d9c083);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 1px 0 rgba(0,0,0,.18))}
+.preview .t{font-size:14px;color:var(--muted);min-width:0}
+.preview .t b{display:block;font-family:"Cormorant Garamond",serif;font-size:22px;color:var(--ink);font-weight:600}
+
+.addon{display:flex;gap:14px;align-items:center;border:1px solid var(--line);background:#fff;padding:10px 16px 10px 10px;cursor:pointer;margin-bottom:10px}
+.addon img{width:56px;height:56px;object-fit:cover;flex:0 0 56px}
+.addon .t{flex:1;min-width:0}
+.addon .t b{display:block;font-size:15px}
+.addon .t small{color:var(--muted);font-size:13px;display:block;line-height:1.4}
+.addon .p{font-weight:800;font-size:14px;white-space:nowrap}
+.addon input{width:19px;height:19px;accent-color:var(--gold-deep);flex:0 0 19px}
+.addon:has(input:checked){border-color:var(--ink);background:var(--gold-soft)}
+
+.buy{margin-top:30px}
+.buy .btn{width:100%}
+.dm{width:100%;margin-top:10px}
+.dm-note{font-size:13px;color:var(--muted);text-align:center;margin-top:8px}
+
+.perks{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:26px}
+.perk{border:1px solid var(--line);background:#fff;padding:14px 8px;text-align:center;font-size:12.5px;font-weight:800;line-height:1.35}
+.perk span{display:block;font-size:20px;margin-bottom:4px}
+
+.acc{margin-top:30px;border-top:1px solid var(--line)}
+.acc details{border-bottom:1px solid var(--line);padding:18px 0;overflow:hidden}
+.acc summary{cursor:pointer;list-style:none;font-family:"Cormorant Garamond",serif;font-size:23px;display:flex;justify-content:space-between}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary::after{content:"+";font-family:"Mulish";font-size:24px;color:var(--gold);transition:transform .2s}
+.acc details[open] summary::after{transform:rotate(45deg)}
+.acc .inner{color:var(--muted);margin-top:10px;font-size:15px}
+.acc ul{padding-left:18px;display:grid;gap:6px}
+
+section.block{padding:90px 0}
+.sec-head{text-align:center;max-width:680px;margin:0 auto 46px}
+.sec-head h2{font-size:clamp(34px,4.2vw,54px);margin-top:12px}
+
+.pages{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.pages figure{background:#fff;padding:10px;box-shadow:var(--shadow)}
+.pages img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.pages figcaption{font-size:14px;font-weight:700;padding:10px 4px 2px}
+
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rev{background:#fff;border:1px solid var(--line);padding:26px;position:relative}
+.rev::before{content:"“";position:absolute;top:-6px;left:18px;font-family:"Cormorant Garamond",serif;font-size:80px;color:var(--rose);line-height:1}
+.rev p{position:relative;font-size:15.5px}
+.rev .who{margin-top:14px;font-size:12.5px;color:var(--muted);font-weight:700}
+.rev .who b{font-family:"Great Vibes",cursive;font-weight:400;font-size:24px;color:var(--gold);margin-right:6px}
+
+.related{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border:1px solid var(--line);transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.card .media{aspect-ratio:1;overflow:hidden}
+.card .media img{width:100%;height:100%;object-fit:cover}
+.card .body{padding:16px 18px 20px}
+.card h3{font-size:25px;margin-bottom:4px}
+.price{font-weight:800;font-size:15px}
+.price small{font-weight:700;color:var(--muted);font-size:12px;margin-left:4px}
+
+.toast{position:fixed;left:50%;bottom:26px;transform:translate(-50%,calc(100% + 40px));visibility:hidden;background:var(--ink);color:#fff;padding:14px 22px;border-radius:2px;font-size:14px;font-weight:700;z-index:90;transition:transform .3s;max-width:calc(100% - 32px);text-align:center}
+.toast.show{transform:translate(-50%,0);visibility:visible}
+.sticky-buy{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);padding:12px 16px;display:none;align-items:center;gap:12px;z-index:80;box-shadow:0 -10px 24px -18px rgba(0,0,0,.4)}
+.sticky-buy .t{flex:1;min-width:0}
+.sticky-buy .t small{display:block;font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sticky-buy .t b{font-size:17px}
+.sticky-buy .btn{padding:12px 18px;flex:0 0 auto}
+
+footer{background:#2f281f;color:#d9cfbf;padding:60px 0 28px;margin-top:20px}
+footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:40px}
+footer .logo{color:#e8dcc4}
+footer .logo img{mix-blend-mode:normal;background:#fff;border-radius:50%}
+footer h4{color:#fff;font-family:"Cormorant Garamond",serif;font-size:22px;font-weight:500;margin-bottom:14px}
+footer li{list-style:none;margin:8px 0;font-size:14px}
+footer li a:hover{color:#fff}
+footer .legal{border-top:1px solid rgba(255,255,255,.12);padding-top:22px;display:flex;justify-content:space-between;font-size:13px;opacity:.7;flex-wrap:wrap;gap:12px}
+
+@media (max-width:1024px){
+  .pages{grid-template-columns:repeat(2,1fr)}
+  .revs{grid-template-columns:1fr 1fr}
+}
+@media (max-width:860px){
+  nav.main{display:none}
+  .menu-btn{display:grid}
+  .product{grid-template-columns:1fr;gap:30px}
+  .gallery{position:static;grid-template-columns:1fr}
+  .thumbs{flex-direction:row;order:2;overflow-x:auto}
+  .thumbs button{flex:0 0 64px}
+  .revs,.related{grid-template-columns:1fr}
+  footer .cols{grid-template-columns:1fr}
+}
+@media (max-width:860px){ .sticky-buy.show{display:flex} }
+@media (max-width:560px){
+  .wrap{padding:0 16px}
+  .eds{grid-template-columns:1fr}
+  .preview{gap:16px;padding:16px}
+  .cover{flex-basis:128px;width:128px}
+  .cover .nm{font-size:20px}
+  .perk{font-size:11.5px;padding:12px 4px}
+  section.block{padding:64px 0}
+  .logo{font-size:22px}
+  .logo img{width:44px;height:44px}
+}
+.mobile-nav{display:none}
+@media (max-width:860px){header.site.menu-open .mobile-nav{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;padding:8px 24px 18px;border-bottom:1px solid var(--line);box-shadow:0 14px 24px -18px rgba(0,0,0,.35)}.mobile-nav a{padding:13px 0;font-size:17px;border-bottom:1px solid var(--line)}.mobile-nav a:last-child{border-bottom:0}}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="index.html"><img src="img/logo.jpg" alt="Moj početak logo">Moj početak</a>
+    <nav class="main" aria-label="Glavna navigacija">
+      <a class="on" href="radosnica.html">Radosnica</a>
+      <a href="index.html#paketi">Paketi</a>
+      <a href="index.html#uspomene">Kofer čuvar</a>
+      <a href="index.html#utisci">Utisci</a>
+      <a href="index.html#porucivanje">Kako poručiti</a>
+    </nav>
+    <div class="icons">
+      <a class="icon-btn" href="https://www.instagram.com/mojpocetak/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg></a>
+      <a class="icon-btn" href="#" aria-label="Korpa"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="badge" id="cartCount">0</span></a>
+      <button class="icon-btn menu-btn" aria-label="Meni" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+  <nav class="crumbs" aria-label="Putanja"><a href="index.html">Početna</a><span>/</span><span>Radosnica</span></nav>
+
+  <div class="product">
+    <div class="gallery">
+      <div class="thumbs" id="thumbs"></div>
+      <div class="stage"><span class="tag">Sa imenom vaše bebe</span><img id="stageImg" src="img/radosnica-kruna.jpg" alt="Radosnica Moj početak"></div>
+    </div>
+
+    <div class="info">
+      <span class="eyebrow">Plišana radosnica · personalizacija</span>
+      <h1>Radosnica <span class="script">Moj početak</span></h1>
+      <div class="rating">♥ <a href="#utisci">Pročitajte utiske roditelja</a></div>
+
+      <div class="pricebox"><span class="now" id="price">4.900 RSD</span><span class="note">okvirna cena</span></div>
+      <p class="intro">Ljubav je na svakoj stranici. Plišane korice sa zlatnom gravurom, ime vaše bebe u zlatu i stranice za prve dane, krštenje, prve fotografije i prvi autogram.</p>
+
+      <div class="opt">
+        <div class="opt-head">1. Izdanje <span class="sel" id="edSel"></span></div>
+        <div class="eds" id="eds"></div>
+        <div class="contains" id="contains"></div>
+      </div>
+
+      <div class="opt">
+        <div class="opt-head">2. Boja korica <span class="sel" id="colSel"></span></div>
+        <div class="swatches" id="swatches"></div>
+        <p class="hint">Nijanse na ekranu su približne. Ako se dvoumite (npr. okean plava ili bebi plava), poslaćemo vam fotografije uživo.</p>
+      </div>
+
+      <div class="opt">
+        <div class="opt-head"><label for="name">3. Ime na koricama</label></div>
+        <input type="text" id="name" maxlength="16" placeholder="npr. Una, Luka, Sofija" autocomplete="off">
+        <div class="preview" aria-live="polite">
+          <div class="cover" id="cover">
+            <svg viewBox="0 0 120 120" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e6d29e"/><stop offset=".55" stop-color="#a7874a"/><stop offset="1" stop-color="#d9c083"/></linearGradient></defs>
+              <circle cx="60" cy="60" r="50" fill="none" stroke="url(#g)" stroke-width="1.6"/>
+              <g fill="url(#g)"><ellipse cx="22" cy="40" rx="3.2" ry="7" transform="rotate(-40 22 40)"/><ellipse cx="30" cy="28" rx="3" ry="6.5" transform="rotate(-60 30 28)"/><ellipse cx="17" cy="53" rx="3" ry="6.5" transform="rotate(-15 17 53)"/><ellipse cx="41" cy="20" rx="2.6" ry="5.6" transform="rotate(-78 41 20)"/>
+              <ellipse cx="98" cy="80" rx="3.2" ry="7" transform="rotate(-40 98 80)"/><ellipse cx="90" cy="92" rx="3" ry="6.5" transform="rotate(-60 90 92)"/><ellipse cx="103" cy="67" rx="3" ry="6.5" transform="rotate(-15 103 67)"/><ellipse cx="79" cy="100" rx="2.6" ry="5.6" transform="rotate(-78 79 100)"/></g>
+              <text x="60" y="58" text-anchor="middle" font-family="Cormorant Garamond,Georgia,serif" font-size="25" font-weight="600" fill="url(#g)">MOJ</text>
+              <text x="60" y="79" text-anchor="middle" font-family="Cormorant Garamond,Georgia,serif" font-size="16.5" font-weight="600" fill="url(#g)" letter-spacing=".5">POČETAK</text>
+            </svg>
+            <span class="nm" id="coverName">Ime</span>
+          </div>
+          <div class="t"><b>Vaše korice</b><span id="prevTxt">Upišite ime i izaberite boju da vidite kako izgleda.</span></div>
+        </div>
+
+        <div id="worldBox" class="hidden">
+          <label class="field"><span>Ime na futroli za pasoš</span><input type="text" id="nameWorld" maxlength="16" placeholder="isto kao na radosnici"></label>
+        </div>
+        <div id="luxBox" class="hidden">
+          <div class="field"><span>Album „Sve moje ptičice“</span>
+            <div class="radios"><label><input type="radio" name="luxName" value="isto" checked> Isto ime</label><label><input type="radio" name="luxName" value="drugo"> Drugo ime (za brata ili sestru)</label></div>
+          </div>
+          <label class="field hidden" id="luxNameWrap"><span>Ime na albumu</span><input type="text" id="nameLux" maxlength="16" placeholder="npr. Kosta"></label>
+        </div>
+        <div id="bornBox" class="hidden">
+          <label class="field"><span>Podaci za kartu rođenja</span><textarea id="bornData" placeholder="Ime i prezime, datum i vreme rođenja, mesto… (sve ostalo dogovaramo u poruci)"></textarea></label>
+        </div>
+      </div>
+
+      <div class="opt" id="dodaci">
+        <div class="opt-head">4. Dodaci <span class="sel" style="color:var(--muted)">po želji</span></div>
+        <label class="addon"><img src="img/DbQLuWDMmG5.jpg" alt=""><span class="t"><b>Kofer čuvar</b><small>Plišani kofer u kome radosnica i sve uspomene imaju svoje mesto</small></span><span class="p">+4.500 RSD</span><input type="checkbox" id="kofer"></label>
+        <label class="addon"><img src="img/roze-nijanse.jpg" alt=""><span class="t"><b>Dve radosnice, za blizance</b><small>Specijalni popust za dve radosnice. Iznos potvrđujemo u poruci.</small></span><span class="p">popust</span><input type="checkbox" id="twins"></label>
+        <label class="field hidden" id="twinWrap"><span>Ime na drugoj radosnici</span><input type="text" id="nameTwin" maxlength="16" placeholder="npr. Mila"></label>
+      </div>
+
+      <div class="opt">
+        <div class="opt-head"><label for="note">5. Napomena</label></div>
+        <textarea id="note" placeholder="Npr. krunica pored imena, datum kada vam treba, lično preuzimanje u Smederevu ili Beogradu…"></textarea>
+      </div>
+
+      <div class="buy"><button class="btn btn-dark" id="addBtn" type="button" onclick="addToCart()">Dodaj u korpu</button></div>
+      <button class="btn btn-ghost dm" type="button" onclick="sendDM()">Pošalji porudžbinu u DM</button>
+      <p class="dm-note">Kopiramo vašu porudžbinu, a vi je samo nalepite u poruku na Instagramu.</p>
+
+      <div class="perks">
+        <div class="perk"><span>✦</span>Ime u zlatu</div>
+        <div class="perk"><span>📦</span>Post Express</div>
+        <div class="perk"><span>📍</span>Smederevo i Beograd</div>
+      </div>
+
+      <div class="acc">
+        <details open><summary>Opis</summary><div class="inner">
+          <p>Radosnica „Moj početak“ je knjiga uspomena za prve dane, mesece i godine vaše bebe. Korice su plišane, logo je u zlatnoj gravuri, a ime vaše bebe ide zlatnim slovima na korice. Štampa i grafički dizajn: NewPress.</p>
+        </div></details>
+        <details><summary>Šta je unutra</summary><div class="inner"><ul>
+          <li>Stranice za vaše zapise i fotografije, sa ilustracijama i pesmama</li>
+          <li>Strana „Moje krštenje“ sa kovertom za čuvanje kosice, u boji korica</li>
+          <li>Strana „Moj autogram“ i USB na poslednjoj strani radosnice</li>
+        </ul></div></details>
+        <details><summary>Izdanja</summary><div class="inner"><ul>
+          <li><b>Baby Born:</b> radosnica i uramljeni poster karte rođenja</li>
+          <li><b>Baby World:</b> radosnica i plišana futrola za pasoš „Osvajam svet“. Kako radosnicu, tako i futrolu možete personalizovati.</li>
+          <li><b>Baby Lux:</b> radosnica i plišani album „Sve moje ptičice“ sa kornerima za fotografije i pesmicama Moše Odalovića. Može biti sa istom personalizacijom, a možete napraviti i kombinaciju: za mlađe i starije dete ili kao dva poklona.</li>
+        </ul></div></details>
+        <details><summary>Dostava i preuzimanje</summary><div class="inner"><p>Šaljemo Post Expressom. Lično preuzimanje je moguće u Smederevu i Beogradu. Cenu i rok dostave potvrđujemo u poruci, kada dogovorimo personalizaciju.</p></div></details>
+        <details><summary>Pakovanje</summary><div class="inner"><p>A kada je poručite… stiže zaštićena i upakovana, sa našim pečatom i karticom, spremna da bude poklon.</p></div></details>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="block" style="background:var(--sky-soft)">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">Detalji</span><h2>Mislili smo na <span class="script">svaki detalj</span></h2></div>
+    <div class="pages">
+      <figure><img src="img/stranica-kosica.jpg" alt="Strana Moje krštenje sa kovertom za kosicu"><figcaption>Koverta za kosicu, u boji korica</figcaption></figure>
+      <figure><img src="img/usb-autogram.jpg" alt="Strana Moj autogram sa USB-om"><figcaption>„Moj autogram“ i USB</figcaption></figure>
+      <figure><img src="img/DbdutJfDB3O_03.jpg" alt="Stranica sa ilustracijom balona"><figcaption>Ilustracije i stihovi</figcaption></figure>
+      <figure><img src="img/pakovanje.jpg" alt="Upakovana roze radosnica sa nalepnicama"><figcaption>Ovako stiže do vas</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="utisci">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">Utisci</span><h2>Kada radosnica <span class="script">stigne</span></h2></div>
+    <div class="revs">
+      <div class="rev"><p>Stigla je radosnica 🥰 Jos je lepsa uzivo, ja sam odusevljena! Svakom detalju ste posvetili paznju, jako kvalitetno, s ljubavlju radjeno i to se vidi.</p><div class="who"><b>Poruka kupca</b></div></div>
+      <div class="rev"><p>Listovi nisu lepljeni nego kao prosiveni, nemate brigu da ce da se raspadne nakon nekog vremena. A korice... i sami vidite 🤗</p><div class="who"><b>Jelena</b></div></div>
+      <div class="rev"><p>Samo da javim da je radosnica danas stigla, svaka Vam čast stvarno, fenomenalna je, ja sam oduševljena i radosnicom i futrolicom za pasoš i generalno pakovanjem, hvala Vam puno ❤️</p><div class="who"><b>Poruka kupca</b> · Baby World</div></div>
+      <div class="rev"><p>Radosnica je stigla, nisam odolela otvorila sam je prvo ja 🙈 Oduševljena sam još lepša nego na slikama 🥰</p><div class="who"><b>Poruka kupca</b> · poklon</div></div>
+      <div class="rev"><p>Papir je divan 🤗</p><div class="who"><b>Dušica</b></div></div>
+      <div class="rev"><p>Nešto predivno je stiglo i do nas 😍😍❤️</p><div class="who"><b>Bojana</b></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">Za čuvanje uspomena</span><h2>Upotpunite poklon</h2></div>
+    <div class="related">
+      <a class="card" href="#dodaci"><div class="media"><img src="img/DbQLuWDMmG5.jpg" alt="Kofer čuvar"></div><div class="body"><h3>Kofer čuvar</h3><span class="price">4.500 RSD<small>okvirno</small></span></div></a>
+      <a class="card" href="https://ig.me/m/mojpocetak" target="_blank" rel="noopener"><div class="media"><img src="img/album-ptice.jpg" alt="Album Sve moje ptičice"></div><div class="body"><h3>Album „Sve moje ptičice“</h3><span class="price">4.500 RSD<small>okvirno</small></span></div></a>
+      <a class="card" href="https://ig.me/m/mojpocetak" target="_blank" rel="noopener"><div class="media"><img src="img/DWPNwx1DPuc.jpg" alt="Fioka ljubavi"></div><div class="body"><h3>Fioka ljubavi</h3><span class="price">8.400 RSD<small>okvirno</small></span></div></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div><a class="logo" href="index.html"><img src="img/logo.jpg" alt="">Moj početak</a>
+        <p style="margin-top:16px;font-size:14px;max-width:36ch">Radosnice sa mogućnošću personalizacije. Štampa i grafički dizajn: @newpress.doo.</p></div>
+      <div><h4>Prodavnica</h4><ul><li><a href="radosnica.html">Radosnica</a></li><li><a href="index.html#paketi">Baby Born · World · Lux</a></li><li><a href="index.html#uspomene">Kofer čuvar</a></li><li><a href="index.html#pitanja">Česta pitanja</a></li></ul></div>
+      <div><h4>Kontakt</h4><ul><li><a href="https://www.instagram.com/mojpocetak/" target="_blank" rel="noopener">Instagram @mojpocetak</a></li><li><a href="https://ig.me/m/mojpocetak" target="_blank" rel="noopener">Poručivanje u DM</a></li><li>Lično preuzimanje: Smederevo, Beograd</li><li>Slanje Post Expressom</li></ul></div>
+    </div>
+    <div class="legal"><span>© 2026 Moj početak. Sva prava zadržana.</span><span>Prikazane cene su okvirne · Smederevo i Beograd, Srbija</span></div>
+  </div>
+</footer>
+
+<div class="sticky-buy" id="stickyBuy">
+  <div class="t"><small id="stickyName">Radosnica</small><b id="stickyPrice">4.900 RSD</b></div>
+  <button class="btn btn-dark" type="button" onclick="addToCart()">U korpu</button>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+/* all prices are ESTIMATES (okvirne cene) — the brand publishes none */
+const EDITIONS = [
+  {id:'radosnica', name:'Radosnica', sub:'samo radosnica', price:4900, img:'img/DZC7VjbssH2.jpg',
+   has:'Radosnica „Moj početak“ sa imenom na koricama.'},
+  {id:'born', name:'Baby Born', sub:'+ karta rođenja', price:6900, img:'img/baby-born-poster.jpg',
+   has:'Radosnica „Moj početak“ + uramljeni poster karte rođenja.'},
+  {id:'world', name:'Baby World', sub:'+ futrola za pasoš', price:6400, img:'img/baby-world.jpg',
+   has:'Radosnica „Moj početak“ + plišana futrola za pasoš „Osvajam svet“, obe sa personalizacijom.'},
+  {id:'lux', name:'Baby Lux', sub:'+ album Sve moje ptičice', price:8900, img:'img/baby-lux.jpg',
+   has:'Radosnica „Moj početak“ + plišani album „Sve moje ptičice“ sa kornerima za fotografije.'},
+];
+const COLORS = [
+  ['Bebi roze classic','#efc3cc'],['Pastelno roze','#f1d6d0'],['Okean plava','#6f93ad'],['Bebi plava','#a9c3dd'],
+  ['Siva','#bcc3ca'],['Bež','#e6cbb6'],['Teget','#2c3a5c'],['Maslinasta','#7d8740'],
+];
+const KOFER = 4500;
+const GALLERY = ['img/radosnica-kruna.jpg','img/DZaW9WQjKW9.jpg','img/DZaW9WQjKW9_02.jpg','img/DbJLdXgMxK3.jpg','img/siva.jpg','img/bez.jpg','img/stranica-kosica.jpg','img/usb-autogram.jpg'];
+const ED_IMG = {born:['img/baby-born-poster.jpg'], world:['img/baby-world.jpg','img/futrola-pasos.jpg'], lux:['img/baby-lux.jpg','img/album-ptice.jpg']};
+
+const $ = id => document.getElementById(id);
+const fmt = n => n.toLocaleString('sr-RS').replace(/,/g,'.') + ' RSD';
+const state = {ed:0, color:0, cart:0};
+const q = new URLSearchParams(location.search).get('izdanje');
+if (q) { const i = EDITIONS.findIndex(e=>e.id===q); if (i>=0) state.ed = i; }
+
+function gallery(){ const e = EDITIONS[state.ed].id; return (ED_IMG[e]||[]).concat(GALLERY); }
+function renderThumbs(){
+  const cur = $('stageImg').getAttribute('src');
+  $('thumbs').innerHTML = gallery().map(src => `<button type="button" class="${src===cur?'on':''}" data-src="${src}" aria-label="Prikaži sliku"><img src="${src}" alt=""></button>`).join('');
+  $('thumbs').querySelectorAll('button').forEach(b => b.onclick = () => showImg(b.dataset.src));
+}
+function showImg(src){
+  const el = $('stageImg'); el.style.opacity = 0;
+  setTimeout(()=>{ el.src = src; el.style.opacity = 1; }, 160);
+  $('thumbs').querySelectorAll('button').forEach(b => b.classList.toggle('on', b.dataset.src===src));
+}
+function renderEds(){
+  $('eds').innerHTML = EDITIONS.map((e,i)=>`<button type="button" class="edb ${i===state.ed?'on':''}" data-i="${i}"><img src="${e.img}" alt=""><span><b>${e.name}</b><small>${e.sub}</small><span class="p">${fmt(e.price)}</span></span></button>`).join('');
+  $('eds').querySelectorAll('button').forEach(b => b.onclick = () => { state.ed = +b.dataset.i; renderEds(); onEdition(); });
+  const e = EDITIONS[state.ed];
+  $('edSel').textContent = e.name;
+  $('contains').innerHTML = `<b>U paketu:</b> ${e.has}`;
+}
+function onEdition(){
+  const id = EDITIONS[state.ed].id;
+  $('worldBox').classList.toggle('hidden', id!=='world');
+  $('luxBox').classList.toggle('hidden', id!=='lux');
+  $('bornBox').classList.toggle('hidden', id!=='born');
+  const first = (ED_IMG[id]||[GALLERY[0]])[0];
+  $('stageImg').src = first; renderThumbs(); update();
+}
+function renderSwatches(){
+  $('swatches').innerHTML = COLORS.map(([n,c],i)=>`<button type="button" class="sw ${i===state.color?'on':''}" style="background:${c}" data-i="${i}" title="${n}" aria-label="${n}" aria-pressed="${i===state.color}"></button>`).join('');
+  $('swatches').querySelectorAll('button').forEach(b => b.onclick = () => { state.color = +b.dataset.i; renderSwatches(); update(); });
+  $('colSel').textContent = COLORS[state.color][0];
+  $('cover').style.setProperty('--cover', COLORS[state.color][1]);
+}
+const nm = () => $('name').value.trim();
+function total(){ return EDITIONS[state.ed].price + ($('kofer').checked ? KOFER : 0); }
+function update(){
+  const e = EDITIONS[state.ed], n = nm();
+  $('coverName').textContent = n || 'Ime';
+  $('prevTxt').textContent = n ? `${COLORS[state.color][0]} · „${n}“ zlatnim slovima` : 'Upišite ime i izaberite boju da vidite kako izgleda.';
+  const t = fmt(total()) + ($('twins').checked ? ' + druga' : '');
+  $('price').textContent = fmt(total());
+  $('stickyPrice').textContent = t;
+  $('stickyName').textContent = `${e.name} · ${COLORS[state.color][0]}${n ? ' · ' + n : ''}`;
+  $('twinWrap').classList.toggle('hidden', !$('twins').checked);
+  $('luxNameWrap').classList.toggle('hidden', document.querySelector('input[name=luxName]:checked').value !== 'drugo');
+}
+function summary(){
+  const e = EDITIONS[state.ed], n = nm();
+  const L = [`Zdravo! Želela bih da poručim: ${e.name === 'Radosnica' ? 'radosnicu „Moj početak“' : 'paket ' + e.name}.`];
+  L.push(`Boja korica: ${COLORS[state.color][0]}`);
+  L.push(n ? `Ime na koricama: ${n}` : 'Ime na koricama: javljam u poruci');
+  if (e.id==='world') L.push(`Ime na futroli za pasoš: ${$('nameWorld').value.trim() || 'isto kao na radosnici'}`);
+  if (e.id==='lux') { const d = document.querySelector('input[name=luxName]:checked').value==='drugo'; L.push(`Album „Sve moje ptičice“: ${d ? 'ime ' + ($('nameLux').value.trim() || '(javljam)') : 'isto ime'}`); }
+  if (e.id==='born') { const b = $('bornData').value.trim(); L.push(`Karta rođenja: ${b || 'podatke šaljem u poruci'}`); }
+  if ($('kofer').checked) L.push('Dodatak: Kofer čuvar');
+  if ($('twins').checked) L.push(`Blizanci, druga radosnica${$('nameTwin').value.trim() ? ': ' + $('nameTwin').value.trim() : ''} (specijalni popust)`);
+  const note = $('note').value.trim(); if (note) L.push(`Napomena: ${note}`);
+  return L.join('\n');
+}
+let toastT;
+function toast(html){ const t=$('toast'); t.innerHTML=html; t.classList.add('show'); clearTimeout(toastT); toastT=setTimeout(()=>t.classList.remove('show'),2800); }
+function addToCart(){
+  state.cart += 1;
+  const b = $('cartCount'); b.textContent = state.cart; b.classList.add('bump'); setTimeout(()=>b.classList.remove('bump'),200);
+  toast(`Dodato u korpu: <b>${EDITIONS[state.ed].name}</b>` + (nm() ? ` · „${nm().replace(/</g,'&lt;')}“` : ' · ime dogovaramo u poruci'));
+}
+function sendDM(){
+  const text = summary();
+  const go = () => window.open('https://ig.me/m/mojpocetak','_blank','noopener');
+  if (navigator.clipboard) navigator.clipboard.writeText(text).then(()=>{ toast('Porudžbina je kopirana. Nalepite je u poruku.'); setTimeout(go,700); }, go);
+  else go();
+}
+['name','kofer','twins'].forEach(id => $(id).addEventListener('input', update));
+$('kofer').addEventListener('change', update); $('twins').addEventListener('change', update);
+document.querySelectorAll('input[name=luxName]').forEach(r => r.addEventListener('change', update));
+
+new IntersectionObserver(([e]) => $('stickyBuy').classList.toggle('show', !e.isIntersecting && e.boundingClientRect.top < 0)).observe($('addBtn'));
+
+renderEds(); renderSwatches(); onEdition();
+</script>
+<script>
+/* mobile menu: collects the header's nav links into one dropdown */
+(function(){var h=document.querySelector('header.site'),b=h&&h.querySelector('.menu-btn');if(!b)return;
+var p=document.createElement('nav');p.className='mobile-nav';p.setAttribute('aria-label','Meni');
+h.querySelectorAll('nav.main a').forEach(function(a){var c=a.cloneNode(true);c.removeAttribute('class');p.appendChild(c)});
+p.style.background=getComputedStyle(document.body).backgroundColor;h.appendChild(p);
+b.addEventListener('click',function(){var o=h.classList.toggle('menu-open');b.setAttribute('aria-expanded',o)});
+p.addEventListener('click',function(e){if(e.target.closest('a')){h.classList.remove('menu-open');b.setAttribute('aria-expanded','false')}});})();
+</script>
+</body>
+</html>
